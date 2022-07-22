@@ -1,10 +1,28 @@
 package transaction;
 
-import user.User;
+import user.Account;
 
 public class Transaction {
 
-    private User sender;
-    private User recipient;
-    private float amount;
+    private final String title;
+    private final Account counterparty;
+    private final float value;
+
+    public Transaction(String title, Account counterparty, float value) {
+        this.title = title;
+        this.counterparty = counterparty;
+        this.value = value;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Account getCounterparty() {
+        return counterparty;
+    }
+
+    public float getValue() {
+        return value;
+    }
 }
