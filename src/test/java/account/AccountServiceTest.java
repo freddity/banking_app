@@ -1,3 +1,5 @@
+package account;
+
 import account.Account;
 import account.AccountService;
 import org.junit.jupiter.api.Test;

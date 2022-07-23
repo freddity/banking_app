@@ -21,6 +21,7 @@ public class AccountService {
         return null;
     }
 
+    // TODO add duplications check
     public String generateNumber() {
         StringBuilder number = new StringBuilder();
         Random random = new Random();
