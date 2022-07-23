@@ -1,6 +1,6 @@
 package transaction;
 
-import user.Account;
+import account.Account;
 
 import java.math.BigDecimal;
 
