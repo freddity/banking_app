@@ -2,6 +2,7 @@ package user;
 
 import transaction.Transaction;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class Account {
@@ -13,10 +14,10 @@ public class Account {
         this.number = number;
     }
 
-    public float defineBalance() {
-        float balance = 0;
+    public BigDecimal defineBalance() {
+        BigDecimal balance = new BigDecimal("0");
         for (Transaction t : transactions) {
-            balance += t.getValue();
+            balance.add(t.getValue());
         }
 
         return balance;

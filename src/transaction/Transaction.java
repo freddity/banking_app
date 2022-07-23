@@ -2,13 +2,15 @@ package transaction;
 
 import user.Account;
 
+import java.math.BigDecimal;
+
 public class Transaction {
 
     private final String title;
     private final Account counterparty;
-    private final float value;
+    private final BigDecimal value;
 
-    public Transaction(String title, Account counterparty, float value) {
+    public Transaction(String title, Account counterparty, BigDecimal value) {
         this.title = title;
         this.counterparty = counterparty;
         this.value = value;
@@ -22,7 +24,7 @@ public class Transaction {
         return counterparty;
     }
 
-    public float getValue() {
+    public BigDecimal getValue() {
         return value;
     }
 }
